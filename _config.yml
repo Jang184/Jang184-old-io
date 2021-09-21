@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "주리의 얼렁뚱땅 개발일기"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "JURI"
+name                     : "JURIJANG"
 description              : "An amazing website."
 url                      : "https://Jang184.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
