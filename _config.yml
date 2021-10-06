@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "주리의 얼렁뚱땅 개발일기"
+title                    : "뚜벅뚜벅 개발일기"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "JURIJANG"
-description              : "An amazing website."
+description              : "뚜벅뚜벅 개발일기"
 url                      : "https://Jang184.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Jang184/Jang184.github.io"
@@ -104,12 +104,12 @@ author:
   name             : "주리 (Juri)"
   avatar           : "https://github.com/Jang184/Jang184.github.io/blob/master/IMG_1379.jpg?raw=true"
   bio              : "Back-End Developer."
-  location         : "Somewhere"
+  location         : "서울시 동작구"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "e2joo418@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
