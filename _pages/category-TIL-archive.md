@@ -7,4 +7,4 @@ taxonomy: TIL
 ---
 
 *Fake it, Till you make it.*    
-`안되면 될때까지 하라`는 신조로 시작한 TIL 모음집입니다. 
+안되면 될때까지 하라! TIL 모음집입니다. 
