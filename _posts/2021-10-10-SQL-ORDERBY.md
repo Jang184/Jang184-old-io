@@ -9,7 +9,8 @@ tag: SQL
 
 ### 1. 여러 개의 컬럼 정렬하기
    
-<div align=center>test table</div>
+**test table**
+
 |A|B|
 |:--:|:--:|
 |1|1|
@@ -17,3 +18,30 @@ tag: SQL
 |2|2|
 |1|3|
 |1|2|
+
+```
+SELECT * FROM test_table ORDER BY A,B;
+```
+A 컬럼으로 정렬한 후, B 컬럼으로 정렬한다.   
+|A|B|
+|:--:|:--:|
+|1|1|
+|1|2|
+|1|3|
+|2|1|
+|2|2|
+
+```
+SELECT * FROM test_table ORDER BY B,A;
+```
+B 컬럼으로 정렬한 후, A 컬럼으로 정렬한다.
+|A|B|
+|:--:|:--:|
+|1|1|
+|2|1|
+|1|2|
+|2|2|
+|1|3|
+
+
+### 2. 
