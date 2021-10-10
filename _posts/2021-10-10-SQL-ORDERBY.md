@@ -7,7 +7,7 @@ tag: SQL
 
 > SELECT 컬럼명 FROM 테이블명 WHERE 조건 ORDER BY 컬럼명1, 컬럼명2
 
-### <span style='color:lightblue'>1. 여러 개의 컬럼 정렬하기</span>
+### <span style='background-color:lightblue'>1. 여러 개의 컬럼 정렬하기</span>
    
 **test table**
 
@@ -48,6 +48,6 @@ B 컬럼으로 정렬한 후, A 컬럼으로 정렬한다.
 |1|3|
 
 
-### <span style='color:lightblue'>2. NULL 값의 정렬순서</span>
+### <span style='background-color:lightblue'>2. NULL 값의 정렬순서</span>
 `ORDER BY`로 지정한 컬럼에서 NULL 값을 갖는 로우는 가장 먼저 혹은 가장 나중에 표시된다.
 데이터베이스 제품마다 기준이 다르지만 MySQL의 경우엔 NULL 값을 <u>가장 작은 값</u>으로 취급해 오름차순에서는 가장 먼저, 내림차순에서는 가장 나중에 표시한다.
