@@ -6,3 +6,5 @@ main:
     url: /about/
   - title: "TIL"
     url: /categories/TIL/
+  - title: "Project"
+    url: /categories/project
