@@ -4,7 +4,7 @@ category: TIL
 tag: SQL
 ---
 
-## <span style='color:darkseagreen'>INSERT로 테이블에 행 추가하기</span>
+## 👩🏼‍💻<span style='color:darkseagreen'>INSERT로 테이블에 행 추가하기</span>
 >INSERT INTO 테이블명 VALUES (값1, 값2, ...);
 
 `INSERT`를 사용해 테이블에 행 단위로 데이터를 추가할 수 있다.
@@ -21,10 +21,12 @@ INSERT INTO test_table(no, result) VALUES (1,'ABC');
 테이블의 컬럼 구성을 확인할 땐 아래의   `DESC` 명령어를 사용한다.
 >DESC test_table;
 
-## <span style='color:darkseagreen'>행에 들어갈 데이터의 값을 지정하지 않았을 때</span>
+## 👩🏼‍💻<span style='color:darkseagreen'>행에 들어갈 데이터의 값을 지정하지 않았을 때</span>
+
 ```
 INSERT INTO test_table(no, result) VALUES 2;
 ```
+
 |no|result|
 |:--:|:--:|
 |1|ABC|
@@ -38,6 +40,7 @@ default값이 0으로 지정된 result의 행에 값을 지정하지 않으면
 ```
 INSERT INTO test_table(no, result) VALUES 3;
 ```
+
 |no|result|
 |:--:|:--:|
 |1|ABC|
