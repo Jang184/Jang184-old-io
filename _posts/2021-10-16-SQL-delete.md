@@ -37,11 +37,11 @@ WHERE no=2;
 |no|A|
 |:--:|:--:|
 |1|ABC|
-|2|456s|
+|2|456|
 
 DELETE와 마찬가지로 WHERE 뒤에 오는 조건과 일치하는 모든 행이 갱신된다.
 
-## 예제) UPDATE로 갱신할 때 주의사항
+## <span style='color:darkseagreen'>예제) UPDATE로 갱신할 때 주의사항</span>
 
 ```
 UPDATE test_table SET no=no+1;
@@ -63,14 +63,12 @@ UPDATE test_table SET no=no+1;
 |2|ABC|
 |3|456|
 
-## 예제2) 여러 개의 컬럼 갱신하기
+## <span style='color:darkseagreen'>예제2) 여러 개의 컬럼 갱신하기</span>
 
 예를 들어, 두 개의 컬럼을 갱신한다고 할 때
 1) 두 구문으로 나눠서 UPDATE
 2) 하나로 묶어서 UPDATE
 두 가지의 방법이 있다. UPDATE 명령을 따로 실행하는 전자보다 후자가 더 효율적이다. 
-
----
 
 |no|A|B|
 |:--:|:--:|:--:|
@@ -89,7 +87,7 @@ UPDATE test_table SET no=no+1, a=no;
 1. no 의 값에 1을 더하여 no 에 저장한다.
 2. 그 값이 A에 대입된다.
 
-## NULL 초기화
+## <span style='color:darkseagreen'>NULL 초기화</span>
 ```
 UPDATE test_table SET A = NULL;
 ```
