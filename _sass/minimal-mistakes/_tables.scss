@@ -10,6 +10,7 @@ table {
   font-size: $type-size-6;
   border-collapse: collapse;
   overflow-x: auto;
+  border: 1px solid #000
 
   & + table {
     margin-top: 1em;
@@ -24,7 +25,7 @@ thead {
 th {
   padding: 0.5em;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
 td {
