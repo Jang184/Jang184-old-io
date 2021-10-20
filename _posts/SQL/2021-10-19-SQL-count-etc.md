@@ -20,6 +20,7 @@ tag: SQL
 |4|C|3|
 |5|NULL|NULL|
 
+<div border='1px solid red'>
 ```
 SELECT SUM(quantity) FROM test_table;
 ```
@@ -27,7 +28,7 @@ SELECT SUM(quantity) FROM test_table;
 |SUM(quantity)|
 |:-:|
 |16|
-
+</div>
 16은 quantity의 모든 열을 하나의 집합으로 보고 그 집합이 갖는 모든 수를 더한 결과이다. SUM은 수치형 집합만 지정할 수 있기때문에 문자열형으로 된 name 열은 지정할 수 없다. SUM도 COUNT와 마찬가지로 `NULL`값은 제외한 나머지 값으로 합계를 낸다.
 
 ## AVG로 평균 구하기
@@ -75,7 +76,7 @@ SELECT MIN(quantity), MAX(quantity)
 |:--:|:--:|
 |1|10|
 
-수치형뿐만 아니라 문자열형과 날짜시간형에도 MIN과 MAX를 사용해 최소값과 최대값을 구할 수 있다. 
+수치형뿐만 아니라 문자열형과 날짜시간형에도 MIN과 MAX를 사용해 최소값과 최대값을 구할 수 있다. 또한, 다른 집계함수와 마찬가지로 NULL값은 무시한다.
 
 ```
 SELECT MIN(name), MAX(name)
