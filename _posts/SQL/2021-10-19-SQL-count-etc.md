@@ -4,13 +4,13 @@ category: TIL
 tag: SQL
 ---
 
-<div align=center style='background-color:honeydew'>
+<div align=center style='background-color:honeydew' border='1px solid black'>
 <br>
 <h1>COUNT 이외의 집계함수</h1>
 <br>
 </div>
 
-## SUM으로 합계 구하기
+## 📌SUM으로 합계 구하기
 
 |no|name|quantity|
 |:--:|:--:|:-:|
@@ -20,7 +20,6 @@ tag: SQL
 |4|C|3|
 |5|NULL|NULL|
 
-<div border='1px solid red'>
 ```
 SELECT SUM(quantity) FROM test_table;
 ```
@@ -28,10 +27,10 @@ SELECT SUM(quantity) FROM test_table;
 |SUM(quantity)|
 |:-:|
 |16|
-</div>
+
 16은 quantity의 모든 열을 하나의 집합으로 보고 그 집합이 갖는 모든 수를 더한 결과이다. SUM은 수치형 집합만 지정할 수 있기때문에 문자열형으로 된 name 열은 지정할 수 없다. SUM도 COUNT와 마찬가지로 `NULL`값은 제외한 나머지 값으로 합계를 낸다.
 
-## AVG로 평균 구하기
+## 📌AVG로 평균 구하기
 
 > SUM(quantity)/COUNT(quantity)
 
@@ -46,7 +45,7 @@ SELECT AVG(quantity) FROM test_table;
 |4.0000|
 
 AVG도 NULL값을 제외한 값으로 평균값을 계산한다. 만약, NULL값을 0으로 간주하고 싶다면 `CASE`를 이용해서 NULL을 0으로 변환한 뒤 계산하면 된다.
-
+<br>
 ```
 SELECT AVG(CASE WHEN quantity IS NULL THEN 0 ELSE quantity END)
 AS resultnull0;
@@ -56,7 +55,7 @@ AS resultnull0;
 |:--:|
 |3.2000|
 
-## MIN, MAX로 최소값, 최대값 구하기
+## 📌MIN, MAX로 최소값, 최대값 구하기
 
 |no|name|quantity|
 |:--:|:--:|:-:|
