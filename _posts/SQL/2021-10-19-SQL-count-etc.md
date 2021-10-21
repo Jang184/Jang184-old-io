@@ -4,12 +4,6 @@ category: TIL
 tag: SQL
 ---
 
-<div align=center style='background-color:honeydew' border='1px solid black'>
-<br>
-<h1>COUNT 이외의 집계함수</h1>
-<br>
-</div>
-
 ## 📌SUM으로 합계 구하기
 
 |no|name|quantity|

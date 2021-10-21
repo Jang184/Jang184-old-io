@@ -4,8 +4,6 @@ category: TIL
 tag: SQL
 ---
 
-<div align=center style='background-color:lavender'><h1>GROUP BY</h1></div>
-
 ## GROUP BY로 그룹화하기
 
 `GROUP BY`는 집계함수로 넘길 집합을 그룹으로 나눠준다.
