@@ -49,6 +49,7 @@ SELECT name FROM test_table GROUP BY name;
 SELECT name, COUNT(name), SUM(quantity)
 FROM test_table GROUP BY name;
 ```
+
 |name|COUNT(name)|SUM(quantity)|
 |-|-|-|
 |NULL|0|NULL|
