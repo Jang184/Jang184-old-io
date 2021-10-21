@@ -3,9 +3,9 @@
    ========================================================================== */
 
 table {
-  display: block;
+  // display: block;
   margin-bottom: 1em;
-  width: 100%;
+  width: 50%;
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
@@ -14,6 +14,7 @@ table {
 
   & + table {
     margin-top: 1em;
+    margin: 0 auto;
   }
 }
 

@@ -82,8 +82,10 @@ WHERE이 조건에 맞는 데이터를 검색하는 것이 GROUP BY가 그룹화
 |B|1|
 |C|1|
 
-> SELECT name, COUNT(name) FROM test_table
-  GROUP BY name HAVING COUNT(name) = 1;
+```
+SELECT name, COUNT(name) FROM test_table
+GROUP BY name HAVING COUNT(name) = 1;
+```
 
 |name|COUNT(name)|
 |-|-|
