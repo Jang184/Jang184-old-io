@@ -22,8 +22,7 @@
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
-    background-color: white;
-    text-align: center;
+    
 
     &:hover {
       opacity: 1;
@@ -45,6 +44,8 @@
   > * {
     margin-top: 1em;
     margin-bottom: 1em;
+    background-color: white;
+    text-align: center;
   }
 
   h2,
