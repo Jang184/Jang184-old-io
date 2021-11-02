@@ -39,14 +39,14 @@ body {
 .page {
   background-color: white;
   @include breakpoint($large) {
-    float: right;
+    // float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    // padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    // padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -54,7 +54,7 @@ body {
     margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
+    // width: 100%;
     clear: both;
 
     .page__content,

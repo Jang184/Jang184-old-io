@@ -80,3 +80,40 @@ UPDATE test1 SET a='있음' WHERE
 
 ## IN
 
+`IN`을 사용하면 집합 안의 값이 존재하는지 확인할 수 있다. 
+
+```
+WHERE no = 3 OR no = 5;
+```
+
+위의 조건을 `IN`을 사용해서 지정할 수 있다.
+
+<p>예시</p>
+
+|no|a|
+|:-:|:-:|
+|1|없음|
+|2|없음|
+|3|있음|
+|4|없음|
+|5|있음|
+
+```
+SELECT * FROM test1
+WHERE no IN (3,5);
+```
+
+<p>결과</p>
+
+|no|a|
+|:-:|:-:|
+|3|있음|
+|5|있음|
+
+집합 부분을 서브쿼리로 표현할 수도 있다.
+
+```
+SELECT * FROM test1
+WHERE no IN
+    (SELECT no2 FROM test2);
+```
