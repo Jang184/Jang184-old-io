@@ -516,9 +516,10 @@ body {
 .page__related {
   @include clearfix();
   float: left;
+  margin-top: 10px;
   margin-bottom: 20px;
   padding: 0 30px;
-  border-top: 1px solid $border-color;
+  // border-top: 1px solid $border-color;
   background-color: white;
 
   @include breakpoint($large) {
