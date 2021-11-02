@@ -33,7 +33,7 @@
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
-      max-height: calc(100vh - #{$nav-height} - 2em);
+      // max-height: calc(100vh - #{$nav-height} - 2em);
     }
   }
 
@@ -89,7 +89,7 @@
     &.sticky {
       @include clearfix();
       position: -webkit-sticky;
-      // position: sticky;
+      position: sticky;
       top: 2em;
       float: right;
 
