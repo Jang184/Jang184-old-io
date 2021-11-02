@@ -287,6 +287,6 @@ defaults:
       comments: true
       related: true
       show_date: true
-      sidebar:
-        nav: "docs"
+      # sidebar:
+        # nav: "docs"
 
