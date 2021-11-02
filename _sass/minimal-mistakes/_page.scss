@@ -13,7 +13,7 @@
   max-width: 100%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
-  border: 1px solid $border-color;
+  border: 4px solid $border-color;
 
   @include breakpoint($x-large) {
     max-width: $max-width;
