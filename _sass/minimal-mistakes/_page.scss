@@ -38,6 +38,8 @@ body {
 
 .page {
   background-color: white;
+  padding: 2em;
+  margin-top: 20px;
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
