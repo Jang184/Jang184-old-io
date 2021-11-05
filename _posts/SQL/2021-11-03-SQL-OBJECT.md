@@ -39,7 +39,8 @@ tag: SQL
      a VARCHAR(30),
      b DATE);
  ```
-사진
+ 
+ <img width="453" alt="스크린샷 2021-11-05 오후 5 36 27" src="https://user-images.githubusercontent.com/81026531/140484938-47308613-ed6a-4a52-8db0-2d296b7a86e0.png">
 
 ### 2. 테이블 삭제
 
@@ -65,6 +66,8 @@ SQL은 명령을 실행할 때 확인을 요구하지 않기 때문에 실수로
 ALTER TABLE test ADD newcol INTEGER;
 ```
 
+<img width="457" alt="스크린샷 2021-11-05 오후 5 41 54" src="https://user-images.githubusercontent.com/81026531/140485004-df4c7833-af08-490f-ad26-71b21f2d4b5f.png">
+
 기존 데이터행이 존재하면 추가한 열의 값이 모두 `NULL`이 된다. 기본값(default)이 지정되어 있으면 기본값으로 데이터가 저장된다. 새롭게 추가하고자 하는 열에 `NOT NULL`제약을 걸고 싶다면 열정의에 기본값을 지정할 필요가 있다.
 
 #### 3-2.열 속성 변경
@@ -74,6 +77,8 @@ ALTER TABLE test ADD newcol INTEGER;
 ```
 ALTER TABLE test MODIFY newcol VARCHAR(20);
 ```
+
+<img width="451" alt="스크린샷 2021-11-05 오후 5 45 05" src="https://user-images.githubusercontent.com/81026531/140485099-618bdc84-6877-4cb1-9346-e54c2a50324a.png">
 
 기존의 데이터 행이 존재하는 경우엔 속성 변경에 따라 데이터가 변환된다.만약 자료형이 변경되면 테이블에 들어간 데이터의 자료형이 바뀐다. 그 처리과정에서 에러가 발생하면 `ALTER`명령은 실행되지 않는다.
 
@@ -85,6 +90,8 @@ ALTER TABLE test MODIFY newcol VARCHAR(20);
 ALTER TABLE test CHANGE newcol c VARCHAR(20);
 ```
 
+<img width="439" alt="스크린샷 2021-11-05 오후 5 53 50" src="https://user-images.githubusercontent.com/81026531/140485139-fa17a1ab-f163-4ca7-9627-79c482335222.png">
+
 #### 3-4. 열 삭제
 
 >ALTER TABLE 테이블명 DROP 열명
@@ -92,4 +99,5 @@ ALTER TABLE test CHANGE newcol c VARCHAR(20);
 ```
 ALTER TABLE test DROP c;
 ```
+<img width="453" alt="스크린샷 2021-11-05 오후 5 36 27" src="https://user-images.githubusercontent.com/81026531/140485160-6be21a06-54ba-46b7-9a68-86230be4a310.png">
 
