@@ -1,7 +1,7 @@
 ---
 title: SQL 상관 서브쿼리
 category: TIL
-tag: CS
+tag: SQL
 ---
 
 ## EXISTS
