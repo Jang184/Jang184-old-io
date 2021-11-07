@@ -79,3 +79,29 @@ ALTER TABLE test DROP CONSTRAINT pkey_sample2;
 ```
 
 `ALTER TABLE`의 `DROP` 명령으로 테이블 제약을 삭제할 수 있다. 삭제할 땐 제약명을 지정한다. <u>단, PK키는 테이블당 하나만 설정할 수 있기 때문에 굳이 제약명을 지정하지 않아도 삭제할 수 있다.</u>
+
+### Primary Key 제약
+
+PK키는 테이블의 행 한 개를 특정할 수 있다. PK키 제약이 설정된 테이블에서는 PK키로 검색했을 때 복수의 행이 일치하는 데이터를 작성할 수 없다. 
+
+<p>예시</p>
+
+```
+CREATE TABLE test (
+    no INTEGER NOT NULL,
+    name VARCHAR(20),
+    CONSTRAINT pkey_sample PRIMARY KEY (no)
+    );
+```
+
+위의 예시에서 'no'열이 테이블의 `PK키`다. PK키로 지정할 열은 `NOT NULL` 제약이 설정되어야 한다. 
+
+```
+INSERT INTO test VALUES (1, '첫번째');
+INSERT INTO test VALUES (2, '두번째');
+INSERT INTO test VALUES (3, '세번째');
+
+INSERT INTO test VALUES (2, '네번째');
+```
+
+`INSERT`를 사용해 테이블에 세 개의 행을 추가했다. 이 때, 'no'열의 값이 각 1,2,3으로 중복되지 않는다. 마지막 줄과 같이 이미 존재하는 값인 2로 다시 한번 행을 추가하면 에러가 발생한다. 이처럼 열을 PK키로 지정해 유일한 값을 가지도록 하는 구조가 `Primary Key 제약`이다. 복수의 열을 PK키로 지정할 수도 있다. 
