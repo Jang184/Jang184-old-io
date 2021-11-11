@@ -17,5 +17,6 @@ docs:
       - title: "프로젝트"
         url: /categories/project
   - title: Today I Learned
+    children:
       - title: "SQL"
-        url: /tags/SQL
+        url: /tags/sql
