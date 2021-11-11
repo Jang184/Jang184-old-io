@@ -1,7 +1,7 @@
 ---
 title: SQL
 permalink: /tags/SQL/
-layout: tags
+layout: tag
 author_profile: true
 taxonomy: SQL
 ---
