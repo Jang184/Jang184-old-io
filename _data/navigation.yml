@@ -8,6 +8,10 @@ main:
     url: /categories/TIL/
   - title: "Category"
     url: /categories/
+  - title: "Tag"
+    url: /tags/
+  - title: "Tag2"
+    url: /tag/sql
 
 docs:
   - title: 끄적끄적 일기
