@@ -14,7 +14,7 @@ main:
     url: /categories/diary
 
 docs:
-  - title: 끄적끄적
+  - title: 카테고리
     children:
       - title: "다이어리"
         url: /categories/diary
