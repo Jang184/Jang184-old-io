@@ -6,15 +6,16 @@ main:
     url: /about/
   - title: "TIL"
     url: /categories/TIL/
-  - title: "Project"
-    url: /categories/project
   - title: "Category"
     url: /categories/
-  - title: "Diary"
-    url: /categories/diary
 
 docs:
-  - title: 카테고리
+  - title: 끄적끄적 일기
     children:
       - title: "다이어리"
         url: /categories/diary
+      - title: "프로젝트"
+        url: /categories/project
+  - title: Today I Learned
+      - title: "SQL"
+        url: /tags/SQL
