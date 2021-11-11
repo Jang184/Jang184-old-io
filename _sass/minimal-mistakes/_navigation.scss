@@ -341,6 +341,7 @@
 
 .nav__list {
   margin-bottom: 1.5em;
+  background-color: rgb(247, 247, 247);
 
   input[type="checkbox"],
   label {
@@ -494,10 +495,11 @@
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   font-weight: bold;
-  text-transform: uppercase;
-  border-bottom: 1px solid $border-color;
+  // text-transform: uppercase;
+  background-color: white;
+  // border-bottom: 1px solid $border-color;
 }
 
 /*
