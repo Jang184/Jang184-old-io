@@ -37,9 +37,7 @@ body {
 }
 
 .page {
-  background-color: white;
-  padding: 10px 30px;
-  margin-top: 20px;
+  
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
@@ -58,6 +56,8 @@ body {
     margin-right: 0;
     // width: 100%;
     clear: both;
+    background-color: white;
+    padding: 20px 30px;
 
     .page__content,
     .page__meta,
@@ -421,6 +421,8 @@ body {
   margin-right: 0;
   width: 100%;
   clear: both;
+  background-color: white;
+  padding: 10px 30px;
 }
 
 .page__comments-title {
