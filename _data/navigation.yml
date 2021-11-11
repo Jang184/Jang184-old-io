@@ -14,7 +14,7 @@ main:
     url: /categories/diary
 
 docs:
-  - title: Getting Started
+  - title: 끄적끄적
     children:
-      - title: "Quick-Start Guide"
+      - title: "다이어리"
         url: /categories/diary
