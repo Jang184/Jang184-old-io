@@ -10,7 +10,7 @@
   text-align: center;
 }
 .sidebar {
-  // @include clearfix();
+  @include clearfix();
   // @include breakpoint(max-width $large) {
   //   /* fix z-index order of follow links */
   //   position: relative;
