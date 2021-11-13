@@ -442,7 +442,10 @@
 .nav__list .nav__items {
   margin: 0;
   font-size: 1.25rem;
-
+  ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
   a {
     color: inherit;
   }
