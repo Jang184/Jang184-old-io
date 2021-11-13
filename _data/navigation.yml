@@ -24,3 +24,7 @@ docs:
     children:
       - title: "SQL"
         url: /tags/sql
+      - title: "TypeScript"
+        url: /tags/ts
+      - title: "JavaScript"
+        url: /tags/js
