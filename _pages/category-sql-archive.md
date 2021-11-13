@@ -1,7 +1,7 @@
 ---
 title: SQL
-permalink: /tags/SQL/
-layout: tag
+permalink: /categories/sql/
+layout: category
 author_profile: true
 taxonomy: SQL
 ---
