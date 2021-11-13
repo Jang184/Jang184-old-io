@@ -1,7 +1,7 @@
 ---
 title: SQL 제약 (NOT NULL 등)
-category: TIL
-tag: SQL
+category: SQL
+tag: TIL
 ---
 
 테이블에 제약을 설정해 저장할 데이터를 제한할 수 있다. 그 중 하나가 `NOT NULL`제약이다. `NOT NULL` 제약은 `NULL`값이 저장되지 않도록 제한한다. 이외에도 `Primary Key`제약이나 `외부참조(Foreign Key)`제약 등이 있다.

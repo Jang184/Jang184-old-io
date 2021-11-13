@@ -1,7 +1,7 @@
 ---
 title: SQL 서브쿼리
-category: TIL
-tag: SQL
+category: SQL
+tag: TIL
 ---
 
 ## 서브쿼리

@@ -1,7 +1,7 @@
 ---
 title: SQL DELETE로 데이터 삭제/UPDATE로 데이터 갱신
-category: TIL
-tag: SQL
+category: SQL
+tag: TIL
 ---
 
 ## ⚙️ <span style='color:darkseagreen'>DELETE로 데이터 삭제하기</span>

@@ -1,7 +1,7 @@
 ---
 title: SQL GROUP BY로 그룹화하기
-category: TIL
-tag: SQL
+category: SQL
+tag: TIL
 ---
 
 ## GROUP BY로 그룹화하기

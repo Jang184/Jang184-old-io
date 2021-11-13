@@ -1,7 +1,7 @@
 ---
 title: SQL ORDER BY로 정렬하기
-category: TIL
-tag: SQL
+category: SQL
+tag: TIL
 ---
 `ORDER BY`를 이용해 컬럼을 지정하고 정렬할 수 있다.
 

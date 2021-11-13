@@ -1,7 +1,7 @@
 ---
 title: SQL INSERT로 데이터 추가하기
-category: TIL
-tag: SQL
+category: SQL
+tag: TIL
 ---
 
 ## 👩🏼‍💻<span style='color:darkseagreen'>INSERT로 테이블에 행 추가하기</span>

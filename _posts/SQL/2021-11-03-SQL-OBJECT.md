@@ -1,7 +1,7 @@
 ---
 title: SQL 데이터베이스 객체
-category: TIL
-tag: SQL
+category: SQL
+tag: TIL
 ---
 
 ## 데이터베이스 객체

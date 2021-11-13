@@ -1,7 +1,7 @@
 ---
 title: SQL 집계함수 (COUNT 이외)
-category: TIL
-tag: SQL
+category: SQL
+tag: TIL
 ---
 
 ## 📌SUM으로 합계 구하기

@@ -1,7 +1,7 @@
 ---
 title: Data Structure 자료구조
-category: TIL
-tag: CS
+category: CS
+tag: TIL
 ---
 
 >메모리를 효율적으로 사용하기 위한 데이터 구조
