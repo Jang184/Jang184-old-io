@@ -24,3 +24,5 @@ docs:
         url: /categories/ts
       - title: "JavaScript"
         url: /categories/js
+      - title: "TypeORM"
+        url: /categories/TypeORM
