@@ -6,7 +6,7 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     <li>
-      <span>전체 글 수 </span><span>{{sum}}</span><span> 개</span>
+      <span style='color:darkgray'>전체 글 수 </span><span style='text-decoration: underline;'>{{sum}}</span><span style='color:darkgray'> 개</span>
     </li> 
     {% for nav in navigation %}
     <li>
