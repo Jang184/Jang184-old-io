@@ -7,7 +7,7 @@
   <ul class="nav__items">
     {% for nav in navigation %}
     <li>
-      <span>전체 글 수</span><span>{{num}}</span><span>개</span>
+      <span>전체 글 수</span><span>{{sum}}</span><span>개</span>
     </li>  
     <li>
         {% if nav.url %}
