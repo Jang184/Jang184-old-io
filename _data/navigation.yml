@@ -18,6 +18,8 @@ docs:
         url: /categories/project
   - title: Today I Learned
     children:
+      - title: "Computer Science"
+        url: /categories/CS
       - title: "SQL"
         url: /categories/sql
       - title: "TypeScript"
@@ -26,3 +28,5 @@ docs:
         url: /categories/js
       - title: "TypeORM"
         url: /categories/TypeORM
+      - title: "Serverless"
+        url: /categories/serverless
