@@ -16,7 +16,7 @@ tag: TIL
 |4|C|
 |5|NULL|
 
-```
+```sql
 SELECT name FROM test_table GROUP BY name;
 ```
 
@@ -27,7 +27,7 @@ SELECT name FROM test_table GROUP BY name;
 |C|
 |NULL|
 
-위와 같이 지정된 컬럼의 값이 같은 행이 하나의 그룹으로 묶인다. `SELECT`가 name 열을 지정했으므로 name 열이 그룹화되어 반환된다. GROUP BY는 `DISTINCT`와 같이 중복을 제거하는 효과가 있다.
+위와 같이 지정된 컬럼의 값이 같은 행이 하나의 그룹으로 묶인다. `SELECT`가 name 열을 지정했으므로 name 열이 그룹화되어 반환된다. GROUP BY는 <u>`DISTINCT`와 같이 중복을 제거하는 효과</u>가 있다.
 
 ## DISTINCT와의 차이점
 
@@ -43,7 +43,7 @@ SELECT name FROM test_table GROUP BY name;
 |4|C|3|
 |5|NULL|NULL|
 
-```
+```sql
 SELECT name, COUNT(name), SUM(quantity)
 FROM test_table GROUP BY name;
 ```
