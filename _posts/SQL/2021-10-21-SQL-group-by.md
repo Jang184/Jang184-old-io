@@ -63,7 +63,7 @@ A그룹에 속하는 두 개의 열이 한 그룹으로 집계함수의 인수�
 
 집계함수는 `WHERE`을 사용해 조건을 지정할 수 없다. 아래와 같은 명령은 에러가 발생한다.
 
-```
+```sql
 SELECT name, COUNT(name) FROM test_table
 WHERE COUNT(name)=1 GROUP BY name;
 ```
@@ -80,7 +80,7 @@ WHERE이 조건에 맞는 데이터를 검색하는 것이 GROUP BY가 그룹화
 |B|1|
 |C|1|
 
-```
+```sql
 SELECT name, COUNT(name) FROM test_table
 GROUP BY name HAVING COUNT(name) = 1;
 ```
@@ -99,14 +99,14 @@ GROUP BY name HAVING COUNT(name) = 1;
 GROUP BY보다 나중에 처리되는 ORDER BY는 집계함수를 사용할 수 있다. 하지만 SELECT보다 먼저 처리되므로 별명을 사용할 수는 없다. 
 
 > WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
-```
+```sql
 SELECT name, COUNT(name),SUM(quantity)
 FROM test_table
 GROUP BY name
 ORDER BY SUM(quantity) DESC;
 ```
 위와 같이, ORDER BY를 사용할 수 있다. 
-```
+```sql
 SELECT name AS n, COUNT(name) AS cn
 FROM test_table
 GROUP BY n
