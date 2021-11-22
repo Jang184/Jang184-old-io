@@ -29,7 +29,7 @@ test2 테이블에 test1 테이블의 no 열의 값과 같은 행이 있다면 `
 |3|
 |5|
 
-```
+```sql
 UPDATE test1 SET a='있음' WHERE
     EXISTS (SELECT * FROM test2 WHERE no2 = no);
 ```
@@ -50,7 +50,7 @@ UPDATE test1 SET a='있음' WHERE
 
 `없음`의 경우에는 행이 없을 때 `True`를 반환한다. 이 때는 `NOT EXISTS`를 사용한다.
 
-```
+```sql
 UPDATE test1 SET a='없음' WHERE
     NOT EXISTS (SELECT * FROM test2 WHERE no2 = no);
 ```
@@ -73,7 +73,7 @@ UPDATE test1 SET a='없음' WHERE
 
 만약, test2 테이블의 no2열이 no였다면 에러가 발생했을 것이다. 보통은 열이 어느 테이블의 것인지 명시해야한다.
 
-```
+```sql
 UPDATE test1 SET a='있음' WHERE
     EXISTS (SELECT * FROM test2 WHERE test2.no2 = test1.no);
 ```
@@ -82,7 +82,7 @@ UPDATE test1 SET a='있음' WHERE
 
 `IN`을 사용하면 집합 안의 값이 존재하는지 확인할 수 있다. 
 
-```
+```sql
 WHERE no = 3 OR no = 5;
 ```
 
@@ -98,7 +98,7 @@ WHERE no = 3 OR no = 5;
 |4|없음|
 |5|있음|
 
-```
+```sql
 SELECT * FROM test1
 WHERE no IN (3,5);
 ```
@@ -112,7 +112,7 @@ WHERE no IN (3,5);
 
 집합 부분을 서브쿼리로 표현할 수도 있다.
 
-```
+```sql
 SELECT * FROM test1
 WHERE no IN
     (SELECT no2 FROM test2);

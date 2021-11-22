@@ -10,7 +10,7 @@ tag: TIL
 
 `CREATE TABLE`을 통해 테이블을 작성할 때 열에 제약을 같이 정의한다. 물론 `ALTER TABLE`로 제약을 지정하거나 변경할 수도 있다. 
 
-```
+```sql
 CREATE TABLE test (
      a INTEGER NOT NULL,
      b INTEGER NOT NULL UNIQUE,
@@ -20,7 +20,7 @@ CREATE TABLE test (
 
 a열에는 `NOT NULL`제약이, b열에는 `NOT NULL`제약과 `UNIQUE` 제약이 걸려있다. 
 
-```
+```sql
 CREATE TABLE test2 (
      no INTEGER NOT NULL,
      sub_no INTEGER NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE test2 (
 
  `Primary Key`제약과 같이 한 개의 제약으로 복수의 열에 제약을 설명하는 경우를 `테이블 제약`이라고 한다.
 
-```
+```sql
 CREATE TABLE test2 (
     no INTEGER NOT NULL,
     sub_no INTEGER NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE test2 (
 
 ### 열 제약 추가
 
-```
+```sql
 ALTER TABLE test MODIFY c VARCHAR(30) NOT NULL;
 ```
 
@@ -54,7 +54,7 @@ ALTER TABLE test MODIFY c VARCHAR(30) NOT NULL;
 
 ### 테이블 제약 추가
 
-```
+```sql
 ALTER TABLE test ADD CONSTRAINT pkey_sample2 PRIMARY KEY(a);
 ```
 
@@ -64,7 +64,7 @@ ALTER TABLE test ADD CONSTRAINT pkey_sample2 PRIMARY KEY(a);
 
 ### 열 제약 삭제
 
-```
+```sql
 ALTER TABLE test MODIFY c VARCHAR(30);
 ```
 
@@ -72,7 +72,7 @@ ALTER TABLE test MODIFY c VARCHAR(30);
 
 ### 테이블 제약 삭제
 
-```
+```sql
 ALTER TABLE test DROP CONSTRAINT pkey_sample2;
 ```
 
@@ -84,7 +84,7 @@ PK키는 테이블의 행 한 개를 특정할 수 있다. PK키 제약이 설�
 
 <p>예시</p>
 
-```
+```sql
 CREATE TABLE test (
     no INTEGER NOT NULL,
     name VARCHAR(20),
@@ -94,7 +94,7 @@ CREATE TABLE test (
 
 위의 예시에서 'no'열이 테이블의 `PK키`다. PK키로 지정할 열은 `NOT NULL` 제약이 설정되어야 한다. 
 
-```
+```sql
 INSERT INTO test VALUES (1, '첫번째');
 INSERT INTO test VALUES (2, '두번째');
 INSERT INTO test VALUES (3, '세번째');

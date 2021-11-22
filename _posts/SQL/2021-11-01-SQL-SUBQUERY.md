@@ -8,7 +8,7 @@ tag: TIL
 
 SQL 명령문의 `SELECT`, `FROM`, `WHERE` 뒤에 SELECT 명령을 넣어 사용할 수 있다. 
 
-```
+```sql
 DELETE FROM
 test_table WHERE a = (
     SELECT MIN(a) FROM test_table;
@@ -32,7 +32,7 @@ test_table WHERE a = (
 1. a 열의 값이 가장 작은 행을 찾는다. -> SELECT MIN(a) FROM test_table
 2. 1번의 값을 지운다. -> DELETE FROM test_table WHERE a = (1번 SQL문)
 
-```
+```sql
 DELETE FROM
 test_table WHERE a = (
     SELECT MIN(a) FROM test_table
@@ -71,7 +71,7 @@ test_table WHERE a = (
 |2|90|
 |4|80|
 
-```
+```sql
 SELECT
     (SELECT COUNT(*) FROM test_table) AS sql1;
 ```
@@ -87,7 +87,7 @@ SELECT
 
 `SET`은 `UPDATE`와 함께 쓰인다. `SET`에서 서브쿼리를 사용할 때는 스칼라 서브쿼리를 지정해야 한다. 예시로 테이블의 a열을 모두 a열의 최대값으로 갱신하려고 한다.
 
-```
+```sql
 UPDATE test_table
 SET a = (
     SELECT MAX(a) FROM test_table
@@ -105,7 +105,7 @@ SET a = (
 
 `FROM`뒤에 테이블이 아닌 다른 명령문을 지정할 수 있다.
 
-```
+```sql
 SELECT * FROM (SELECT * FROM test_table) test;
 ```
 
@@ -115,7 +115,7 @@ SELECT 안에 SELECT 명령이 들어있는 이와 같은 구조를 `중첩구�
 
 `INSERT`와 서브쿼리를 조합해 사용할 땐 `VALUES` 명령을 사용할 수 있다. 서브쿼리는 스칼라 서브쿼리로 지정하도록 한다.
 
-```
+```sql
 INSERT INTO test_table2 VALUES(
     (SELECT COUNT(*) FROM test_table)
 );
