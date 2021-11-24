@@ -7,6 +7,9 @@ tag:
     - database
 ---
 
+
+
+[참고 : TypeORM 공식문서 - query builder ](https://typeorm.io/#/select-query-builder/using-subqueries)
 ## QueryBuilder란?
 
 > 변환한 entity를 자동으로 가져와 SQL쿼리를 편리하게 빌드해준다.
