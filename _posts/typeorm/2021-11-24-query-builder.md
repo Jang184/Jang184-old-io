@@ -35,7 +35,7 @@ WHERE user.id = 1
 ```
 결과적으로 아래와 같은 User의 인스턴스를 반환한다.
 
-```bash
+```js
 User {
     id: 1,
     firstName: "Timber",
@@ -322,7 +322,7 @@ const posts = qb
     .where("post.title IN " + 
         qb.subQuery()
             .select("user.name")
-            .from(User, "user")
+            .from( User, "user")
             .where("user.registered = :registered")
             .getQuery())
     .setParameter("registered", true)
