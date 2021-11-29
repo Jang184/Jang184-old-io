@@ -38,8 +38,6 @@ aws dynamodb list-tables --endpoint-url http://localhost:8000
 ```
 위와 같이 테이블 리스트가 조회되면서 연결된 것을 확인할 수 있다.
 
----
-
 [참고 : AWS 사용설명서](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-services-dynamodb.html)
 
 ## DynamoDB 테이블 생성
