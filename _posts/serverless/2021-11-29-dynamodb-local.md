@@ -71,8 +71,6 @@ aws dynamodb list-tables --endpoint-url http://localhost:8000
  ]
 ```
 
-
-
 ```js
 $ aws dynamodb create-table \
     --table-name test-table \
@@ -94,11 +92,3 @@ NoSQL Workbench를 사용하면 쉽게 데이터를 입력할 수 있다. 또는
 <div align=center><img src='https://user-images.githubusercontent.com/81026531/143883306-7e4419f3-a021-41c5-9a14-ea042666b153.png'></div>
 
 NoSQL 특유의 nested 구조가 잘 이해되지 않아서 AWS console에서 테이블을 생성해보면서 이해했다. 
-
-
-
-`list` `map` 타입의 데이터 구조를 섞어 사용해야해서 조건을 설정하기가 매우 헷갈렸다. 
-
-```js
-
-```
