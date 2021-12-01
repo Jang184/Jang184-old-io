@@ -5,7 +5,7 @@ tag:
     - TIL
 ---
 
-[참고 : AWS EventBridge 훑어보기](https://velog.io/@techy-yunong/AWS-EventBridge-concept)<br>
+[참고 : Serverless Docs ](https://www.serverless.com/framework/docs/providers/aws/events/event-bridge)<br>
 [참고 : AWS Quick Starts](https://aws.amazon.com/ko/quickstart/eventbridge/aws-lambda/)
 
 ## Amazon EventBridge란?
