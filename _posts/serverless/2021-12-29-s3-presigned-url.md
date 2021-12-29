@@ -49,4 +49,20 @@ const getPresignedUrl = () => {
 
 ## S3 Event
 
-보통 
+보통 Lambda의 trigger로 `APIGateWay`를 사용한다. 예를 들어, API endpoint로 http 요청을 보내면 로직을 수행하고 response를 반환하는 싸이클이 있다. 이와 비슷하게 Lambda의 trigger로 S3를 사용할 수도 있다. 예를 들어, 특정 S3 버킷에 새로운 Object가 업로드되면 미리 지정해놓은 Lambda 함수를 실행한다.
+
+프론트에서 S3로 파일을 업로드함과 동시에 DB에 경로를 저장해두기 위해 S3 trigger를 사용할 수 있다. S3에 Object가 업로드되면 해당 Object의 버킷 내 경로를 DB에 저장하도록 설정하면 된다. 
+
+```yml
+function:
+    - updateDBFunction:
+        handler: src/handler.updateDB
+        timeout: 60
+        events:
+            - s3:
+                bucket: BUCKET_NAME
+                event: s3:ObjectCreated:*
+            
+```
+
+serverless 를 사용할 땐 위의 코드와 같이 s3 trigger를 설정할 수 있다.
