@@ -48,6 +48,9 @@ SELECT AVG(
     END
 ) AS resultnull0;
 ```
+혹은
+
+AVG를 `SUM()/COUNT(*)`로도 표현할 수 있는데 이 때 주의해야할 점은 COUNT함수는 `NULL`값을 갖는 row도 세기때문에 분모가 달라질 수 있다. 
 
 ```sql
 SELECT AVG(CASE WHEN quantity IS NULL THEN 0 ELSE quantity END)
