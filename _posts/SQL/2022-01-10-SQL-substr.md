@@ -1,9 +1,7 @@
 ---
 title: SQL 문자열 자르기
 category: SQL
-tag:
-	- TIL
-	- database
+tag: TIL
 ---
 
 ## 문자열을 자르는 내장함수
