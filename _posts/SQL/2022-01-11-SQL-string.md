@@ -11,7 +11,7 @@ tag: TIL
 
 모든 문자를 소문자로 반환한다.
 
-```SQL
+```sql
 SELECT LOWER(UserID)
 FROM Users
 ```
@@ -22,7 +22,7 @@ FROM Users
 
 모든 문자를 대문자로 반환한다.
 
-```SQL
+```sql
 SELECT UPPER(UserID)
 FROM Users
 ```
@@ -33,7 +33,7 @@ FROM Users
 
 문자열에 포함된 패턴1을 패턴2로 대체해 반환한다.
 
-```SQL
+```sql
 SELECT REPLACE(UserID, 'A', 'B')
 FROM Users
 ```
@@ -58,7 +58,7 @@ output
 
 여러 개의 문자열을 차례대로 연결해 하나의 문자열로 반환한다.
 
-```SQL
+```sql
 SELECT CONCAT(ID, ':', UserID) AS User
 FROM Users
 ```

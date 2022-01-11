@@ -10,34 +10,6 @@ tag: TIL
 
 [Leetcode-Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)
 
-```
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| id          | int     |
-| name        | varchar |
-| salary      | int     |
-| managerId   | int     |
-+-------------+---------+
-
-Input: 
-Employee table:
-+----+-------+--------+-----------+
-| id | name  | salary | managerId |
-+----+-------+--------+-----------+
-| 1  | Joe   | 70000  | 3         |
-| 2  | Henry | 80000  | 4         |
-| 3  | Sam   | 60000  | Null      |
-| 4  | Max   | 90000  | Null      |
-+----+-------+--------+-----------+
-Output: 
-+----------+
-| Employee |
-+----------+
-| Joe      |
-+----------+
-```
-
 한 테이블에 같은 테이블을 JOIN할 수 있다. 동일한 테이블을 구분하기 위해서 `alias`를 사용해야한다.
 
 ```sql
@@ -53,25 +25,6 @@ WHERE Employee.salary > Manager.salary
 
 [Leetcode-Rising Temperature](https://leetcode.com/problems/rising-temperature/)
 
-```
-Input: 
-Weather table:
-+----+------------+-------------+
-| id | recordDate | temperature |
-+----+------------+-------------+
-| 1  | 2015-01-01 | 10          |
-| 2  | 2015-01-02 | 25          |
-| 3  | 2015-01-03 | 20          |
-| 4  | 2015-01-04 | 30          |
-+----+------------+-------------+
-Output: 
-+----+
-| id |
-+----+
-| 2  |
-| 4  |
-+----+
-```
 
 ```sql
 SELECT Today.id
@@ -85,7 +38,7 @@ WHERE Today.temperature > Yesterday.temperature
 
 ## 시간 다루기
 
-- DATE_ADD(기준날짜, INTERVAL) 시간더하기
+### DATE_ADD(기준날짜, INTERVAL) 시간더하기
 ```
 SELECT DATE_ADD(NOW(), INTERVAL 1 SECOND)
 SELECT DATE_ADD(NOW(), INTERVAL 1 HOUR)
@@ -94,7 +47,7 @@ SELECT DATE_ADD(NOW(), INTERVAL 1 MONTH)
 SELECT DATE_ADD(NOW(), INTERVAL 1 YEAR)
 SELECT DATE_ADD(NOW(), INTERVAL -1 YEAR)
 ```
-- DATE_SUB(기준날짜, INTERVAL) 시간빼기
+### DATE_SUB(기준날짜, INTERVAL) 시간빼기
 ```
 SELECT DATE_SUB(NOW(), INTERVAL 1 SECOND)
 ```
@@ -103,6 +56,7 @@ id가 아닌 Date를 기준으로 JOIN 한다.
 ```sql
 SELECT Today.id
 From Weather Today
-     INNER JOIN Weather Yesterday ON DATE_SUB(Today.recordDate, INTERVAL 1 DAY) = Yesterday.recordDate
+     INNER JOIN Weather Yesterday 
+     ON DATE_SUB(Today.recordDate, INTERVAL 1 DAY) = Yesterday.recordDate
 WHERE Today.temperature > Yesterday.temperature
 ```
