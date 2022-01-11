@@ -1,9 +1,6 @@
 ---
 title: SQL 문자열을 다루는 함수
 category: SQL
-tag:
-	- TIL
-	- database
 ---
 
 ## 1. LOWER
