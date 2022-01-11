@@ -1,9 +1,7 @@
 ---
 title: SQL SELF JOIN 
 category: SQL
-tag:
-	- TIL
-	- database
+tag: TIL
 ---
 
 ## Self JOIN
